@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="RandomPastDate" value="2020-12-01"/>
+  <parameter name="InCorrectURl" value="https://api.ratesapi.io/api/"/>
+  <parameter name="nextDate" value="2021-12-26"/>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="SeleniumAutomation.InterviewQuestion.API">
+        <methods>
+          <include name="RatesAPINextDate" invocation-numbers="0"/>
+          <include name="Date"/>
+        </methods>
+      </class> <!-- SeleniumAutomation.InterviewQuestion.API -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
